@@ -344,6 +344,11 @@ div.card-wrapper {
 div.card-wrapper h1 {
   padding-top: 100px;
 }
+@media (max-width: 720px) {
+  div.card-wrapper {
+    margin-top: 200px;
+  }
+}
 /* form starting stylings ------------------------------- */
 div.form {
   text-align: center;
