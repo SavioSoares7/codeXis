@@ -14,16 +14,26 @@
     />
   </head>
   <body>
-    <header>
-      <h1>Logo</h1>
-
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Produtos Desenvolvidos</a></li>
-
-        <li><a href="#">Contanto</a></li>
-      </ul>
+    <header id="header">
+      <a id="logo" href="">Logo</a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          Menu
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Produtos Desenvolvidos</a></li>
+          <li><a href="#">Contanto</a></li>
+        </ul>
+      </nav>
     </header>
     <!--Animação-->
     <div class="context">
@@ -91,17 +101,7 @@
 
     <!--Produtos desenvolvidos-->
     <div class="card-wrapper">
-      <div class="content">
-        <br />
-        <h1>Produtos já desenvolvidos</h1>
-      </div>
-      <div class="shade"></div>
-      <div class="card__bg__image">
-        <img
-          alt=""
-          src="https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg'"
-        />
-      </div>
+      <h1 id="productDev">Produtos desenvolvidos</h1>
     </div>
 
     <div class="form">
@@ -125,4 +125,5 @@
       </form>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
